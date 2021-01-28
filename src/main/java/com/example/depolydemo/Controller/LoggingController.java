@@ -15,4 +15,9 @@ public class LoggingController {
     public String hello() {
         return "hello";
     }
+
+    @GetMapping("/wow")
+    public String wow() {
+        return "wow";
+    }
 }
