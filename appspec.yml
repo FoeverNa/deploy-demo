@@ -4,6 +4,8 @@ os: linux
 files:
   - source: /
     destination: /opt/testapp
+    overwrite:yes
+
 permissions:
   - object: /opt/testapp/
     owner: ubuntu
