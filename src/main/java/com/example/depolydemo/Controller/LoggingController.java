@@ -20,4 +20,9 @@ public class LoggingController {
     public String wow() {
         return "wow";
     }
+
+    @GetMapping("/help")
+    public String help() {
+        return "help";
+    }
 }
