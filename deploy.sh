@@ -25,3 +25,7 @@ fi
 
 echo "> $JAR_PATH 배포"
 nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
+
+if [ -d rm -rf /opt/testapp ]; then
+    sudo rm -rf /var/www/release
+fi
