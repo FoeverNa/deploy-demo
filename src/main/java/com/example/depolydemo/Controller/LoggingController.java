@@ -15,4 +15,5 @@ public class LoggingController {
     public String help() {
         return "help";
     }
+
 }
