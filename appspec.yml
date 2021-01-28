@@ -4,6 +4,7 @@ os: linux
 files:
   - source: /
     destination: /opt/testapp
+    overwirte: yes
 
 permissions:
   - object: /opt/testapp/
@@ -11,8 +12,6 @@ permissions:
     group: ubuntu
     mode: 755
 hooks:
-  BeforeInstall:
-    - location: beforeinstall.sh
   AfterInstall:
     - location: deploy.sh
       timeout: 60
