@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-if [ -d /opt/testapp/ ]; then
-    rm -rf /opt/testapp/
-fi
-mkdir -vp /opt/testapp/
-mkdir -vp /opt/testapp/wow/
 
 REPOSITORY=/opt/testapp
 cd $REPOSITORY
