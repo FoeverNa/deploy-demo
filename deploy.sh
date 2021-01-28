@@ -2,13 +2,6 @@
 
 
 REPOSITORY=/opt/testapp
-
-if [ -d $REPOSITORY ]; then
-    sudo rm -rf $REPOSITORY
-fi
-sudo mkdir -vp $REPOSITORY
-
-
 cd $REPOSITORY
 
 APP_NAME=action_codedeploy
