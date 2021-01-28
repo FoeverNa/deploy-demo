@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ -d /opt/testapp ]; then
+    sudo rm -rf /opt/testapp
+fi
+sudo mkdir -vp /opt/testapp
+
 REPOSITORY=/opt/testapp
 cd $REPOSITORY
 
