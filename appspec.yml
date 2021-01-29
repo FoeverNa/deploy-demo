@@ -3,14 +3,18 @@ os: linux
 
 files:
   - source: /
-    destination: /opt/testapp
-    overwirte: yes
+    destination: /home/ec2-user/testapp/ # 프로젝트 이름
+    overwrite: yes
+
 
 permissions:
-  - object: /opt/testapp/
-    owner: ubuntu
-    group: ubuntu
-    mode: 755
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+
+  출처: https://wbluke.tistory.com/40?category=418851 [함께 자라기]
+
 hooks:
   AfterInstall:
     - location: deploy.sh
