@@ -6,10 +6,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoggingController {
 
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
+
     @GetMapping("/wow")
     public String wow() {
         return "wow";
     }
+
 
     @GetMapping("/help")
     public String help() {
