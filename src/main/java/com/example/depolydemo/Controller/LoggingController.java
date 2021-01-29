@@ -11,15 +11,10 @@ public class LoggingController {
         return "home";
     }
 
-    @GetMapping("/wow")
+    @GetMapping("/hello")
     public String wow() {
-        return "wow";
+        return "hello";
     }
 
-
-    @GetMapping("/help")
-    public String help() {
-        return "help";
-    }
 
 }
