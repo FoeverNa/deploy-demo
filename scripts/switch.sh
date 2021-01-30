@@ -23,6 +23,6 @@ echo "set \$service_url http://13.125.206.158:${TARGET_PORT};" | tee /home/ubunt
 echo "> Now Nginx proxies to ${TARGET_PORT}."
 
 # Reload nginx
-sudo service nginx reload
+sudo sudo service nginx reload
 
 echo "> Nginx reloaded."
