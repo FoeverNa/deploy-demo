@@ -22,7 +22,17 @@ fi
 echo "set \$service_url http://127.0.0.1:${TARGET_PORT};" | tee /home/ubuntu/service_url.inc
 echo "> Now Nginx proxies to ${TARGET_PORT}."
 
+TARGET_PID=$(lsof -Fp -i TCP:${CURRENT_PORT} | grep -Po 'p[0-9]+' | grep -Po '[0-9]+')
+
+if [ ! -z ${TARGET_PID} ]; then
+  echo "> Kill WAS running at ${CURRENT_PORT}."
+  sudo kill ${TARGET_PID}
+fi
+
+
 # Reload nginx
 sudo sudo service nginx reload
 
 echo "> Nginx reloaded."
+
+
