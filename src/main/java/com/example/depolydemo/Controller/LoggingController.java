@@ -8,12 +8,12 @@ public class LoggingController {
 
     @GetMapping("/")
     public String home() {
-        return "wowreal?";
+        return "ani";
     }
 
     @GetMapping("/hello")
     public String wow() {
-        return "hello";
+        return "real";
     }
 
 
