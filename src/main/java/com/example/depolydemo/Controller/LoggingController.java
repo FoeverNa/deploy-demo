@@ -8,7 +8,7 @@ public class LoggingController {
 
     @GetMapping("/")
     public String home() {
-        return "8081차례";
+        return "8082차례";
     }
 
     @GetMapping("/hello")
