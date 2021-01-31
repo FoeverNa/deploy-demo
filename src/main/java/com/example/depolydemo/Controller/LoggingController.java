@@ -8,10 +8,10 @@ public class LoggingController {
 
     @GetMapping("/")
     public String home() {
-        return "8082차례";
+        return "8081차례";
     }
 
-    @GetMapping("/hello")
+    @GetMapping("/health")
     public String wow() {
         return "real";
     }
